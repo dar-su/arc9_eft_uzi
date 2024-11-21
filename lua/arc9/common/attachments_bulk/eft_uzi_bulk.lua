@@ -16,7 +16,7 @@ ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 1.02
 ATT.PhysBulletMuzzleVelocityMult = 0.99
 
-ATT.Spread = 0.65 * ARC9.MOAToAcc
+ATT.Spread = 4.74 * ARC9.MOAToAcc
 
 ATT.HasBarrel = true 
 
@@ -61,7 +61,7 @@ ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.98
 
-ATT.Spread = 0.65 * ARC9.MOAToAcc
+ATT.Spread = 4.4 * ARC9.MOAToAcc
 
 ATT.HasBarrel = true 
 
@@ -99,7 +99,7 @@ ATT.VisualRecoilMult = 0.95
 ATT.HeatCapacityMult = 0.92
 ATT.PhysBulletMuzzleVelocityMult = 1.06
 
-ATT.Spread = 0.65 * ARC9.MOAToAcc
+ATT.Spread = 1.72 * ARC9.MOAToAcc
 
 ATT.HasBarrel = true 
 
@@ -118,6 +118,7 @@ ATT.Attachments = {
     },
 }
 
+ATT.MuzzleEffectQCA = 5
 
 ARC9.LoadAttachment(ATT, "eft_uzi_barrel_409")
 
@@ -135,7 +136,7 @@ ATT.CustomCons = { Ergonomics = "-1" }
 ATT.HeatCapacityMult = 1.058
 ATT.PhysBulletMuzzleVelocityMult = 0.9675
 
-ATT.Spread = 0.65 * ARC9.MOAToAcc
+ATT.Spread = 7.56 * ARC9.MOAToAcc
 
 ATT.HasBarrel = true 
 
@@ -180,7 +181,7 @@ ATT.CustomCons = { Ergonomics = "-1" }
 ATT.HeatCapacityMult = 1.065
 ATT.PhysBulletMuzzleVelocityMult = 0.969
 
-ATT.Spread = 0.65 * ARC9.MOAToAcc
+ATT.Spread = 7.73 * ARC9.MOAToAcc
 
 ATT.HasBarrel = true 
 
@@ -217,7 +218,7 @@ ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 1.042
 ATT.PhysBulletMuzzleVelocityMult = 0.9752
 
-ATT.Spread = 0.65 * ARC9.MOAToAcc
+ATT.Spread = 6.26 * ARC9.MOAToAcc
 
 ATT.HasBarrel = true 
 
@@ -236,6 +237,7 @@ ATT.Attachments = {
     },
 }
 
+ATT.MuzzleEffectQCA = 5
 
 ARC9.LoadAttachment(ATT, "eft_uzipro_barrel_170")
 
@@ -255,7 +257,7 @@ ATT.VisualRecoilMult = 0.96
 ATT.HeatCapacityMult = 1.026
 ATT.PhysBulletMuzzleVelocityMult = 0.9806
 
-ATT.Spread = 0.65 * ARC9.MOAToAcc
+ATT.Spread = 5.02 * ARC9.MOAToAcc
 
 ATT.HasBarrel = true 
 
@@ -274,6 +276,7 @@ ATT.Attachments = {
     },
 }
 
+ATT.MuzzleEffectQCA = 6
 ARC9.LoadAttachment(ATT, "eft_uzipro_barrel_210")
 
 ///////////////////////////////////////      eft_uzipro_barrel_240
@@ -292,7 +295,7 @@ ATT.VisualRecoilMult = 0.95
 ATT.HeatCapacityMult = 0.988
 ATT.PhysBulletMuzzleVelocityMult = 0.9823
 
-ATT.Spread = 0.65 * ARC9.MOAToAcc
+ATT.Spread = 4.64 * ARC9.MOAToAcc
 
 ATT.HasBarrel = true 
 
@@ -312,6 +315,7 @@ ATT.Attachments = {
     },
 }
 
+ATT.MuzzleEffectQCA = 6
 ARC9.LoadAttachment(ATT, "eft_uzipro_barrel_240")
 
 ///////////////////////////////////////      eft_uzi_muzzle_3thr
@@ -432,6 +436,8 @@ ATT.BarrelLengthAdd = 5
 ATT.Silencer = true
 
 ATT.Category = {"eft_sup_uzi"}
+
+ATT.MuzzleEffectQCA = 5
 
 ARC9.LoadAttachment(ATT, "eft_uzi_muzzle_sup")
 
@@ -1049,7 +1055,7 @@ ATT.Attachments = {
     {
         PrintName = "Optic",
         Category = {"eft_optic_large_nosniper", "eft_optic_medium", "eft_optic_small"},
-        Pos = Vector(-1, 0, -0.68),
+        Pos = Vector(-1.5, 0, -0.68),
         Ang = Angle(0, 0, 0),
     },
 }
@@ -1168,7 +1174,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_uzi_mag"}
 
 ATT.HasMag = true 
-ATT.SuppressEmptySuffix = false 
+-- ATT.SuppressEmptySuffix = false 
 
 ATT.ClipSize = 20
 -- ATT.ChamberSize = 1
@@ -1197,7 +1203,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_uzi_mag"}
 
 ATT.HasMag = true 
-ATT.SuppressEmptySuffix = false 
+-- ATT.SuppressEmptySuffix = false 
 
 ATT.ClipSize = 25
 -- ATT.ChamberSize = 1
@@ -1223,7 +1229,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_uzi_mag"}
 
 ATT.HasMag = true 
-ATT.SuppressEmptySuffix = false 
+-- ATT.SuppressEmptySuffix = false 
 
 ATT.ClipSize = 32
 -- ATT.ChamberSize = 1
@@ -1252,7 +1258,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_uzi_mag"}
 
 ATT.HasMag = true 
-ATT.SuppressEmptySuffix = false 
+-- ATT.SuppressEmptySuffix = false 
 
 ATT.ClipSize = 40
 -- ATT.ChamberSize = 1
@@ -1281,7 +1287,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_uzi_mag"}
 
 ATT.HasMag = true 
-ATT.SuppressEmptySuffix = false 
+-- ATT.SuppressEmptySuffix = false 
 
 ATT.ClipSize = 50
 -- ATT.ChamberSize = 1
@@ -1310,7 +1316,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_uzi_mag_pro"}
 
 ATT.HasMag = true 
-ATT.SuppressEmptySuffix = false 
+-- ATT.SuppressEmptySuffix = false 
 
 ATT.ClipSize = 20
 -- ATT.ChamberSize = 1
@@ -1339,7 +1345,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_uzi_mag_pro"}
 
 ATT.HasMag = true 
-ATT.SuppressEmptySuffix = false 
+-- ATT.SuppressEmptySuffix = false 
 
 ATT.ClipSize = 25
 -- ATT.ChamberSize = 1
@@ -1365,7 +1371,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_uzi_mag_pro"}
 
 ATT.HasMag = true 
-ATT.SuppressEmptySuffix = false 
+-- ATT.SuppressEmptySuffix = false 
 
 ATT.ClipSize = 32
 -- ATT.ChamberSize = 1
