@@ -875,10 +875,10 @@ SWEP.AttachmentElements = {
 
     ["eft_uzipro_stock_csm"] = { Bodygroups = { {6, 2} } },
     ["eft_uzipro_stock_a3"] = { Bodygroups = { {6, 1} } },
+    ["eft_uzipro_stock_brace_folded"] = { Bodygroups = { {6, 7} } },
     ["eft_uzipro_stock_brace_unfolded"] = { Bodygroups = { {6, 5} } },
-    ["eft_uzipro_stock_brace_folded"] = { Bodygroups = { {6, 6} } },
+    ["eft_uzipro_stock_sbr_folded"] = { Bodygroups = { {6, 6} } },
     ["eft_uzipro_stock_sbr_unfolded"] = { Bodygroups = { {6, 4} } },
-    ["eft_uzipro_stock_sbr_folded"] = { Bodygroups = { {6, 7} } },
     ["eft_uzipro_stock_backplate"] = { Bodygroups = { {6, 3} } },
 
     ["eft_uzipro_hg_mlok"] = { Bodygroups = { {4, 1} } },
