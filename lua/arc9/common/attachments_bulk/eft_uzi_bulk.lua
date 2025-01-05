@@ -1412,3 +1412,123 @@ ATT.Attachments = {
 
 
 ARC9.LoadAttachment(ATT, "eft_uzipro_smg")
+
+
+///////////////////////////////////////      eft_uzi_mag_100
+
+ATT = {}
+
+ATT.PrintName = "UZI 9x19 Beta C-Mag 100-round drum magazine"
+ATT.CompactName = "UZI C-Mag 100"
+ATT.Icon = Material("entities/eft_uzi_attachments/balls.png", "mips smooth")
+ATT.Description = "A 100-round double drum magazine for the UZI submachine gun. The magazine modification is equipped with a transparent plastic cover that allows to check the ammo count. Manufactured by Beta Company."
+
+ATT.EFTErgoAdd = -16
+ATT.CustomCons = { Ergonomics = "-16" }
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_uzi_balls.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_uzi_balls_drop.mdl"
+ATT.DropMagazineAmount = 1
+ATT.ModelAngleOffset = Angle(0, 90, 0)
+ATT.SortOrder = 100
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_uzi_mag"}
+
+ATT.HasMag = true 
+-- ATT.SuppressEmptySuffix = false 
+
+ATT.ClipSize = 100
+-- ATT.ChamberSize = 1
+
+local bulletbones = {
+    [94] = "patron_007",
+    [93] = "patron_008",
+    [92] = "patron_009",
+    [91] = "patron_010",
+    
+    [82] = "patron_019",
+    [81] = "patron_020",
+    [80] = "patron_021",
+    [79] = "patron_022",
+
+    [69] = "patron_032",
+
+    [57] = "patron_044",
+    [56] = "patron_045",
+    [55] = "patron_046",
+    [54] = "patron_047",
+    [53] = "patron_048",
+    [52] = "patron_049",
+    [51] = "patron_050",
+    [50] = "patron_051",
+    [49] = "patron_052",
+    [48] = "patron_053",
+    [47] = "patron_054",
+    [46] = "patron_055",
+    [45] = "patron_056",
+    [44] = "patron_057",
+    [43] = "patron_058",
+    [42] = "patron_059",
+    [41] = "patron_060",
+    [40] = "patron_061",
+    [39] = "patron_062",
+    [38] = "patron_063",
+    [37] = "patron_064",
+    [36] = "patron_065",
+    [35] = "patron_066",
+    [34] = "patron_067",
+    [33] = "patron_068",
+    [32] = "patron_069",
+    [31] = "patron_070",
+    [30] = "patron_071",
+    [29] = "patron_072",
+    [28] = "patron_073",
+    [27] = "patron_074",
+    [26] = "patron_075",
+    [25] = "patron_076",
+    [24] = "patron_077",
+    [23] = "patron_078",
+    [22] = "patron_079",
+    [21] = "patron_080",
+    [20] = "patron_081",
+    [19] = "patron_082",
+    [18] = "patron_083",
+    [17] = "patron_084",
+    [16] = "patron_085",
+    [15] = "patron_086",
+    [14] = "patron_087",
+    [13] = "patron_088",
+    [12] = "patron_089",
+    [11] = "patron_090",
+    [10] = "patron_091",
+    [9] = "patron_092",
+    [8] = "patron_093",
+    [7] = "patron_094",
+    [6] = "patron_095",
+    [5] = "patron_096",
+    [4] = "patron_097",
+    [3] = "patron_098",
+    [2] = "patron_099",
+    [1] = "patron_100",
+}
+
+local v0 = Vector(0, 0, 0)
+local v1 = Vector(1, 1, 1)
+
+ATT.DrawFunc = function(wep, model, wm)
+    local clip = wep:GetLoadedRounds()
+
+    local draww = 100 - clip
+
+    for k, v in pairs(bulletbones) do
+        local boneid = model:LookupBone(v)
+        if k >= draww then
+            model:ManipulateBoneScale(boneid, v1)
+        else
+            model:ManipulateBoneScale(boneid, v0)
+        end
+    end
+end
+
+ARC9.LoadAttachment(ATT, "eft_uzi_mag_100")
