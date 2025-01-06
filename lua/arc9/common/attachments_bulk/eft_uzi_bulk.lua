@@ -498,6 +498,7 @@ ATT.CustomPros = { Ergonomics = "+1" }
 ATT.RecoilMult = 0.77
 ATT.VisualRecoilMult = 0.77
 
+ATT.HasStock = true
 
 ATT.SortOrder = -1
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -529,7 +530,8 @@ ATT.ToggleStats = {
         PrintName = "Extended",
         RecoilMult = 0.79,
         VisualRecoilMult = 0.79,
-        ActivateElements = {"eft_uzi_stock_t5_unfolded"}
+        ActivateElements = {"eft_uzi_stock_t5_unfolded"},
+        HasStock = true
     },
     {
         PrintName = "Collapsed",
@@ -568,7 +570,8 @@ ATT.ToggleStats = {
         PrintName = "Unfolded",
         RecoilMult = 0.8,
         VisualRecoilMult = 0.8,
-        ActivateElements = {"eft_uzi_stock_t6_unfolded"}
+        ActivateElements = {"eft_uzi_stock_t6_unfolded"},
+        HasStock = true
     },
     {
         PrintName = "Folded",
@@ -598,6 +601,8 @@ ATT.EFTErgoAdd = 3
 ATT.CustomPros = { Ergonomics = "+3" }
 ATT.RecoilMult = 0.77
 ATT.VisualRecoilMult = 0.77
+
+ATT.HasStock = true
 
 
 ATT.SortOrder = -1
@@ -716,7 +721,8 @@ ATT.ToggleStats = {
         PrintName = "Unfolded",
         RecoilMult = 0.87,
         VisualRecoilMult = 0.87,
-        ActivateElements = {"eft_uzipro_stock_brace_unfolded"}
+        ActivateElements = {"eft_uzipro_stock_brace_unfolded"},
+        HasStock = true
     },
     {
         PrintName = "Folded",
@@ -755,7 +761,8 @@ ATT.ToggleStats = {
         PrintName = "Unfolded",
         RecoilMult = 0.85,
         VisualRecoilMult = 0.85,
-        ActivateElements = {"eft_uzipro_stock_sbr_unfolded"}
+        ActivateElements = {"eft_uzipro_stock_sbr_unfolded"},
+        HasStock = true
     },
     {
         PrintName = "Folded",
@@ -793,6 +800,7 @@ ATT.ToggleStats = {
         PrintName = "Unfolded",
         RecoilMult = 0.88,
         VisualRecoilMult = 0.88,
+        HasStock = true
     },
     {
         PrintName = "Folded",
