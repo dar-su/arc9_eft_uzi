@@ -5,18 +5,18 @@ SWEP.Spawnable = true
 
 ------------------------- |||           Trivia            ||| -------------------------
 
-SWEP.PrintName = "IWI UZI"
-SWEP.Description = [[An Israeli 9x19mm submachine gun with an open bolt system. A very innovative product of its time which gained great popularity due to its reliability and simplicity of design. Despite being rather outdated, it is still quite popular all over the world.]]
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_uzi")
+SWEP.Description = "eft_weapon_uzi_desc"
 
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_smg")
+SWEP.Class = "eft_class_weapon_smg"
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_smg")
 
 SWEP.Trivia = {
-    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = "Israel Weapon Industries",
-    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "9x19mm Parabellum",
-    [ARC9:GetPhrase("eft_trivia_act") .. "3"] = ARC9:GetPhrase("eft_trivia_act_recoil"),
-    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = "Israel",
-    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "1954"
+    ["eft_trivia_manuf1"] = "eft_trivia_manuf_iwi",
+    ["eft_trivia_cal2"] = "eft_trivia_calibr_9x19",
+    ["eft_trivia_act3"] = "eft_trivia_act_recoil",
+    ["eft_trivia_country4"] = "eft_trivia_country_israel",
+    ["eft_trivia_year5"] = "1954"
 }
 
 SWEP.StandardPresets = {

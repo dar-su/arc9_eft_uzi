@@ -5,18 +5,18 @@ SWEP.Spawnable = true
 
 ------------------------- |||           Trivia            ||| -------------------------
 
-SWEP.PrintName = "IWI UZI PRO Pistol"
-SWEP.Description = [[The UZI PRO Pistol (UPP9S) is a fully automatic conversion of the 9x19mm Parabellum submachine gun for law enforcement and military use. This ultra-compact submachine gun is an evolution of the full-size UZI submachine gun, ideal for concealed carry and featuring a high rate of fire. Manufactured by Israel Weapon Industries.]]
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_uzipro")
+SWEP.Description = "eft_weapon_uzipro_desc"
 
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_smg")
+SWEP.Class = "eft_class_weapon_smg"
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_smg")
 
 SWEP.Trivia = {
-    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = "Israel Weapon Industries",
-    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "9x19mm Parabellum",
-    [ARC9:GetPhrase("eft_trivia_act") .. "3"] = ARC9:GetPhrase("eft_trivia_act_blow"),
-    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = "Israel",
-    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "2010"
+    ["eft_trivia_manuf1"] = "eft_trivia_manuf_iwi",
+    ["eft_trivia_cal2"] = "eft_trivia_calibr_9x19",
+    ["eft_trivia_act3"] = "eft_trivia_act_blow",
+    ["eft_trivia_country4"] = "eft_trivia_country_israel",
+    ["eft_trivia_year5"] = "2010"
 }
 
 SWEP.StandardPresets = {
@@ -200,21 +200,13 @@ end
 SWEP.HookP_NameChange = function(self, name)
     local elements = self:GetElements()
 
-    if elements["eft_uzipro_smg"] then
-        return "IWI UZI PRO SMG"
-    else
-        return "IWI UZI PRO Pistol"
-    end
+    if elements["eft_uzipro_smg"] then return ARC9:GetPhrase("eft_weapon_uziprosmg") end
 end
 
 SWEP.HookP_DescriptionChange = function(self, desc)
     local elements = self:GetElements()
 
-    if elements["eft_uzipro_smg"] then
-        return [[The UZI PRO SMG is a submachine gun for law enforcement and military use. This ultra-compact submachine gun is an evolution of the full-size UZI submachine gun, ideal for concealed carry and featuring a high rate of fire. Manufactured by Israel Weapon Industries.]]
-    else
-        return [[The UZI PRO Pistol (UPP9S) is a fully automatic conversion of the 9x19mm Parabellum submachine gun for law enforcement and military use. This ultra-compact submachine gun is an evolution of the full-size UZI submachine gun, ideal for concealed carry and featuring a high rate of fire. Manufactured by Israel Weapon Industries.]]
-    end
+    if elements["eft_uzipro_smg"] then return "eft_weapon_uziprosmg_desc" end
 end
 
 ------------------------- |||           Sounds            ||| -------------------------
